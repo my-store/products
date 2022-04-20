@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/products/static/css/main.6b788b9f.css",
+    "main.js": "/products/static/js/main.b84e3182.js",
+    "static/js/787.d0acb16e.chunk.js": "/products/static/js/787.d0acb16e.chunk.js",
+    "static/media/wp-6.jpg": "/products/static/media/wp-6.f310bf0fc1698747260b.jpg",
+    "static/media/lembaga-kerja-sosial-brebes.png": "/products/static/media/lembaga-kerja-sosial-brebes.a650ec357cf84e720de6.png",
+    "index.html": "/products/index.html",
+    "main.6b788b9f.css.map": "/products/static/css/main.6b788b9f.css.map",
+    "main.b84e3182.js.map": "/products/static/js/main.b84e3182.js.map",
+    "787.d0acb16e.chunk.js.map": "/products/static/js/787.d0acb16e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b788b9f.css",
+    "static/js/main.b84e3182.js"
+  ]
+}
