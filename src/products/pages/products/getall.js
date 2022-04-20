@@ -7,7 +7,7 @@ const numberFormat = (_x) =>
 
 export default class GetAllProducts extends Component {
   render() {
-    const { database, getoneProduct } = this.props;
+    const { database, getoneProduct, imgPath } = this.props;
     return (
       <div className="getall-page">
         <div className="products-banner">
@@ -43,7 +43,7 @@ export default class GetAllProducts extends Component {
                           <div
                             className="product-photo"
                             style={{
-                              backgroundImage: `url("${photo}")`,
+                              backgroundImage: `url("${imgPath + photo}")`,
                             }}
                           ></div>
                           <h1 className="product-name">{nama}</h1>

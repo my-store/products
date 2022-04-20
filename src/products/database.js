@@ -4,13 +4,14 @@ export default class Database {
       db: {
         name: "Database",
         ext: "json",
-        path: "", // Production
+        path: "https://github.com/my-store/products/blob/main/public/", // Production
       },
     };
   }
   getdata = async () => {
     let data = [];
-    const dbFile = this.state.db.name + "." + this.state.db.ext;
+    const { db } = this.state;
+    const dbFile = db.path + db.name + "." + db.ext;
     data = await fetch(`/${dbFile}`);
     data = await data.json();
     return data;

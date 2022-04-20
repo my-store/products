@@ -24,6 +24,9 @@ class Products extends Component {
       page: null,
       database: [],
       isloading: true,
+
+      imgPath:
+        "https://github.com/my-store/products/blob/main/public/products/",
     };
     this.pageRef = {
       Header: createRef(),
@@ -41,7 +44,7 @@ class Products extends Component {
     const database = await db.load();
 
     // Page
-    let { page } = this.state;
+    let { page, imgPath } = this.state;
 
     // Jika terdapat & maka parameter adalah array, jika tidak maka single-object
     let params = await window.location.search.substring(1);
@@ -76,7 +79,7 @@ class Products extends Component {
         if (arg == "id") {
           const dataExist = await db.getone(params[arg]);
           if (dataExist) {
-            page = <GetoneProduct data={dataExist} />;
+            page = <GetoneProduct data={dataExist} imgPath={imgPath} />;
           }
         }
       }
@@ -84,7 +87,7 @@ class Products extends Component {
 
     // No parameter
     else {
-      page = <GetAllProducts />;
+      page = <GetAllProducts imgPath={imgPath} />;
     }
 
     // Back button handler
@@ -129,7 +132,9 @@ class Products extends Component {
     const data = await db.getone(getID);
     if (data) {
       await window.history.pushState({}, "Getone Product", "?id=" + getID);
-      return this.setPage(<GetoneProduct data={data} />);
+      return this.setPage(
+        <GetoneProduct data={data} imgPath={this.state.imgPath} />
+      );
     }
   };
 

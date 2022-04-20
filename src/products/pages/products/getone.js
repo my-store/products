@@ -15,7 +15,7 @@ const numberFormat = (_x) =>
 
 export default class GetoneProduct extends Component {
   render() {
-    const { data } = this.props;
+    const { data, imgPath } = this.props;
     const { nama, warna, harga, kondisi, tlp } = data;
 
     // Tags
@@ -29,7 +29,7 @@ export default class GetoneProduct extends Component {
       <div className="getone-page">
         <div
           className="product-photo"
-          style={{ backgroundImage: `url("${data.photo}")` }}
+          style={{ backgroundImage: `url("${imgPath + data.photo}")` }}
         ></div>
 
         {/* Info */}
