@@ -1,0 +1,158 @@
+$window: 800px;
+$white: #eee;
+$grey: #b1b1b1;
+$primary-color: rgb(0, 109, 128);
+
+@mixin bg-white {
+  background-color: $white;
+}
+
+// Global style
+.getone-page {
+  width: 100%;
+
+  .product-spacer {
+    display: block;
+    opacity: 0.3;
+    background-color: $grey;
+  }
+
+  .product-photo {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-info {
+    width: 100%;
+    .product-price {
+      width: 100%;
+      color: $primary-color;
+      font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+
+  .product-detail {
+    width: 100%;
+  }
+
+  .product-tags {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .product-contact {
+    width: 100%;
+    .whatsapp {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .product-share {
+    width: 100%;
+    .share-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+// PC style
+@media screen and(min-width: $window) {
+  .getone-page {
+    .product-photo {
+      height: 400px;
+    }
+    .product-info {
+    }
+  }
+}
+
+// Mobile style
+@media screen and(max-width: $window) {
+  .getone-page {
+    .product-spacer {
+      height: 10px;
+      min-height: 10px;
+      margin: 5px 0px 5px 0px;
+    }
+
+    .product-photo {
+      height: 300px;
+    }
+
+    .product-info {
+      padding: 10px;
+      .product-name {
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .product-price {
+        font-size: 18px;
+        line-height: 18px;
+        padding: 3px 0px 5px 0px;
+      }
+      .product-condition {
+        font-size: 14px;
+        line-height: 14px;
+      }
+      .product-color {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+
+    .product-detail {
+      padding: 0px 10px 5px 10px;
+      h1 {
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+
+    .product-tags {
+      padding: 2px 10px 2px 10px;
+      p {
+        font-size: 14px;
+        line-height: 14px;
+        max-height: 14px;
+        padding-left: 5px;
+        overflow: hidden;
+      }
+    }
+
+    .product-contact {
+      padding: 2px 10px 2px 10px;
+      .whatsapp {
+        p {
+          font-size: 14px;
+          line-height: 14px;
+          padding-left: 5px;
+        }
+      }
+    }
+
+    .product-share {
+      padding: 5px 10px 5px 10px;
+      h1 {
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 5px;
+      }
+      .share-item {
+        padding: 2px 0px 2px 0px;
+      }
+    }
+  }
+}

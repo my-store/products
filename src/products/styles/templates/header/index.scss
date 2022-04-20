@@ -1,0 +1,171 @@
+$window: 800px;
+$white: #eee;
+$primary-color: rgb(0, 109, 128);
+
+@mixin bg-white {
+  background-color: $white;
+}
+
+@mixin bg-prime {
+  background-color: $primary-color;
+}
+
+// Global style
+.header {
+  width: 100%;
+  color: $white;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $primary-color;
+  padding: 0px 10px 0px 10px;
+  border-bottom: 1px solid $white;
+  .header-brand {
+    color: $white;
+  }
+  .header-links {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// PC style
+@media screen and (min-width: $window) {
+  .header {
+    height: 35px;
+    min-height: 35px;
+    .header-brand {
+      font-size: 15px;
+      line-height: 15px;
+    }
+    .header-links {
+      .link {
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+        &:not(.link:nth-child(1)) {
+          margin-left: 10px;
+        }
+      }
+    }
+    .header-burger {
+      display: none;
+    }
+  }
+}
+
+// Mobile style
+@media screen and (max-width: $window) {
+  .header {
+    .header-brand {
+      font-size: 17px;
+      line-height: 17px;
+    }
+    .header-links {
+      display: none;
+    }
+    .header-burger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 40px;
+      width: 20px;
+      .bgr-1,
+      .bgr-2,
+      .bgr-3 {
+        height: 2px;
+        border-radius: 1px;
+        animation-iteration-count: inherit;
+        @include bg-white();
+      }
+      .bgr-1 {
+        animation-duration: 1s;
+        width: 20px;
+      }
+      .bgr-2 {
+        animation-duration: 1.5s;
+        width: 15px;
+        margin: 5px 0px 5px 0px;
+        align-self: flex-end;
+      }
+      .bgr-3 {
+        animation-duration: 1s;
+        width: 10px;
+        align-self: flex-end;
+      }
+      .bgr-1-active {
+        animation-name: bgr-1-anim;
+        transform: rotate(230deg) translate(0px, -11px);
+      }
+      .bgr-2-active {
+        animation-name: bgr-2-anim;
+        transform: rotate(0deg) translate(-100px, 0px);
+        visibility: hidden;
+        opacity: 0;
+      }
+      .bgr-3-active {
+        animation-name: bgr-3-anim;
+        width: 20px;
+        transform: rotate(-230deg) translate(0px, 11px);
+      }
+      @keyframes bgr-1-anim {
+        0% {
+          transform: rotate(0deg) translate(0px, 0px);
+        }
+        40% {
+          transform: rotate(-180deg) translate(-20px, 0px);
+        }
+        60% {
+          transform: rotate(-180deg) translate(20px, 0px);
+        }
+        100% {
+          transform: rotate(-230deg) translate(0px, -11px);
+        }
+      }
+      @keyframes bgr-2-anim {
+        0% {
+          transform: rotate(0deg) translate(0px, 0px);
+          visibility: visible;
+          opacity: 1;
+        }
+        80% {
+          transform: rotate(0deg) translate(0px, 0px);
+          visibility: visible;
+          opacity: 1;
+        }
+        90% {
+          transform: rotate(0deg) translate(10px, 0px);
+          visibility: visible;
+          opacity: 1;
+          background-color: red;
+        }
+        100% {
+          transform: rotate(0deg) translate(-100px, 0px);
+          visibility: visible;
+          opacity: 1;
+          background-color: yellow;
+        }
+      }
+      @keyframes bgr-3-anim {
+        0% {
+          transform: rotate(0deg) translate(0px, 0px);
+        }
+        50% {
+          transform: rotate(180deg) translate(-20px, 0px);
+        }
+        70% {
+          transform: rotate(180deg) translate(20px, 0px);
+        }
+        100% {
+          transform: rotate(230deg) translate(0px, 11px);
+        }
+      }
+    }
+  }
+}

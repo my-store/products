@@ -1,0 +1,97 @@
+$window: 800px;
+$white: #eee;
+$cyan: rgb(2, 247, 255);
+$primary-color: rgb(8, 134, 156);
+
+@mixin bg-white {
+  background-color: $white;
+}
+
+@mixin bg-prime {
+  background-color: $primary-color;
+}
+
+@mixin bg-cyan {
+  background-color: $cyan;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(30, 162, 185);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 109, 128);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 3px solid transparent;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @include bg-prime();
+}
+
+@mixin _shadow_($alpha) {
+  -webkit-box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, $alpha);
+  -moz-box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, $alpha);
+  box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, $alpha);
+}
+
+.loading {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page {
+  width: 100%;
+  .page-header {
+    width: 100%;
+  }
+  .page-content {
+    // PC Style
+    @media screen and (min-width: 800px) {
+      max-width: 640px; // Berpengaruh pada sidebar
+      padding: 45px 10px 10px 10px;
+      @include bg-white();
+    }
+    // Mobile Style
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      padding: 40px 0px 10px 0px;
+    }
+    .content {
+      width: 100%;
+    }
+  }
+
+  .contact-btn {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    right: 10px;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include bg-prime();
+    border-radius: 50%;
+    color: $white;
+    border: 1px solid $white;
+    @include _shadow_(0.3);
+    &:active {
+      @include bg-cyan();
+    }
+  }
+
+  .page-footer {
+    width: 100%;
+  }
+}
