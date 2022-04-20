@@ -1,10 +1,12 @@
+import $ from "jquery";
+
 export default class Database {
   constructor() {
     this.state = {
       db: {
         name: "Database",
         ext: "json",
-        path: "https://github.com/my-store/products/blob/main/public/", // Production
+        path: "https://raw.githubusercontent.com/my-store/products/main/public/", // Production
       },
     };
   }
@@ -12,8 +14,7 @@ export default class Database {
     let data = [];
     const { db } = this.state;
     const dbFile = db.path + db.name + "." + db.ext;
-    data = await fetch(`/${dbFile}`);
-    data = await data.json();
+    data = await $.getJSON(dbFile, (x) => x);
     return data;
   };
   load = async () => {
