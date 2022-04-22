@@ -7,13 +7,33 @@ import {
   BsTwitter,
   BsInstagram,
 } from "react-icons/bs";
-// import $ from "jquery";
+import $ from "jquery";
 
 /* ======= | NUMBER FORMATING | ======= */
 const numberFormat = (_x) =>
   _x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
 export default class GetoneProduct extends Component {
+  componentDidMount() {
+    $(window).scrollTop(0);
+  }
+
+  shareThis = async ({ nama, harga, warna, tlp }, target) => {
+    const data = {
+      title: `BAGIKAN KE ${target.toUpperCase()}`,
+      url: "https://wokeh.com",
+      text: "Izzat Alharis",
+    };
+
+    try {
+      await navigator.share(data);
+      alert("Data shared!");
+    } catch (error) {
+      alert(error);
+      return Promise.reject(error);
+    }
+  };
+
   render() {
     const { data, imgPath } = this.props;
     const { nama, warna, harga, kondisi, tlp } = data;
@@ -83,10 +103,25 @@ export default class GetoneProduct extends Component {
         <div className="product-share">
           <h1>Bagikan</h1>
           <div className="share-item">
-            <BsWhatsapp size={20} style={{ marginRight: 7 }} />
-            <BsInstagram size={20} style={{ marginRight: 7 }} />
-            <BsFacebook size={20} style={{ marginRight: 7 }} />
-            <BsTwitter size={20} />
+            <BsWhatsapp
+              onClick={() => this.shareThis(data, "whatsapp")}
+              size={20}
+              style={{ marginRight: 7 }}
+            />
+            <BsInstagram
+              onClick={() => this.shareThis(data, "whatsapp")}
+              size={20}
+              style={{ marginRight: 7 }}
+            />
+            <BsFacebook
+              onClick={() => this.shareThis(data, "whatsapp")}
+              size={20}
+              style={{ marginRight: 7 }}
+            />
+            <BsTwitter
+              onClick={() => this.shareThis(data, "whatsapp")}
+              size={20}
+            />
           </div>
         </div>
       </div>

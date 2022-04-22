@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 import "../../styles/pages/products/getall.scss";
+import $ from "jquery";
 
 /* ======= | NUMBER FORMATING | ======= */
 const numberFormat = (_x) =>
   _x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
 export default class GetAllProducts extends Component {
+  componentDidMount() {
+    $(window).scrollTop(0);
+  }
+
   render() {
     const { database, getoneProduct, imgPath } = this.props;
     return (
