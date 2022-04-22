@@ -2,6 +2,7 @@ import React, { Component, createRef } from "react";
 import "./styles/index.scss";
 import Loading from "react-loading";
 import { BsWhatsapp } from "react-icons/bs";
+import { Helmet } from "react-helmet";
 import $ from "jquery";
 
 // Templates
@@ -156,15 +157,28 @@ class Products extends Component {
   render() {
     const { page, database, isloading } = this.state;
 
-    if (isloading) {
-      return (
-        <div className="loading">
-          <Loading type="bubbles" color="rgb(15, 54, 99)" />
-        </div>
-      );
-    } else {
-      return (
-        <div className="page">
+    return (
+      <div className="page">
+        <Helmet>
+          <title>RBX FAMILY BREBES</title>
+          {/* Chrome, Firefox OS and Opera */}
+          <meta name="theme-color" content="#006d80" />
+          {/* Windows Phone */}
+          <meta name="msapplication-navbutton-color" content="#006d80" />
+          {/* iOS Safari */}
+          <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="#006d80"
+          />
+        </Helmet>
+
+        {isloading && (
+          <div className="loading">
+            <Loading type="bubbles" color="rgb(15, 54, 99)" />
+          </div>
+        )}
+
+        {!isloading && (
           <div className="page-header">
             <Header
               setPage={this.setPage}
@@ -172,7 +186,9 @@ class Products extends Component {
               refHandler={this.refHandler}
             />
           </div>
+        )}
 
+        {!isloading && (
           <div className="page-sidebar">
             <Sidebar
               setPage={this.setPage}
@@ -181,16 +197,22 @@ class Products extends Component {
               database={database}
             />
           </div>
+        )}
 
-          {/* Contact button */}
+        {/* Contact button */}
+        {!isloading && (
           <div className="contact-btn" onClick={this.openWhatsapp}>
             <BsWhatsapp size={20} />
           </div>
+        )}
 
+        {!isloading && (
           <div className="page-content">
             <div className="content">{page}</div>
           </div>
+        )}
 
+        {!isloading && (
           <div className="page-footer">
             <Footer
               setPage={this.setPage}
@@ -198,9 +220,9 @@ class Products extends Component {
               refHandler={this.refHandler}
             />
           </div>
-        </div>
-      );
-    }
+        )}
+      </div>
+    );
   }
 }
 

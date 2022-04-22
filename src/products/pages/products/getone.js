@@ -1,12 +1,7 @@
 import React, { Component } from "react";
 import "../../styles/pages/products/getone.scss";
-import {
-  BsWhatsapp,
-  BsTag,
-  BsFacebook,
-  BsTwitter,
-  BsInstagram,
-} from "react-icons/bs";
+import { BsWhatsapp, BsTag, BsShare } from "react-icons/bs";
+import { Helmet } from "react-helmet";
 import $ from "jquery";
 
 /* ======= | NUMBER FORMATING | ======= */
@@ -18,20 +13,12 @@ export default class GetoneProduct extends Component {
     $(window).scrollTop(0);
   }
 
-  shareThis = async ({ nama, harga, warna, tlp }, target) => {
+  shareThis = ({ nama }) => {
     const data = {
-      title: `BAGIKAN KE ${target.toUpperCase()}`,
-      url: "https://wokeh.com",
-      text: "Izzat Alharis",
+      text: nama.toUpperCase(),
+      url: window.location,
     };
-
-    try {
-      await navigator.share(data);
-      alert("Data shared!");
-    } catch (error) {
-      alert(error);
-      return Promise.reject(error);
-    }
+    return navigator.share(data);
   };
 
   render() {
@@ -47,6 +34,12 @@ export default class GetoneProduct extends Component {
 
     return (
       <div className="getone-page">
+        <Helmet>
+          <title>{nama.toUpperCase()}</title>
+          <meta name="description" content={info} />
+          <link rel="canonical" href={window.location} />
+        </Helmet>
+
         <div
           className="product-photo"
           style={{ backgroundImage: `url("${imgPath + data.photo}")` }}
@@ -100,29 +93,8 @@ export default class GetoneProduct extends Component {
         <div className="product-spacer"></div>
 
         {/* Share */}
-        <div className="product-share">
-          <h1>Bagikan</h1>
-          <div className="share-item">
-            <BsWhatsapp
-              onClick={() => this.shareThis(data, "whatsapp")}
-              size={20}
-              style={{ marginRight: 7 }}
-            />
-            <BsInstagram
-              onClick={() => this.shareThis(data, "whatsapp")}
-              size={20}
-              style={{ marginRight: 7 }}
-            />
-            <BsFacebook
-              onClick={() => this.shareThis(data, "whatsapp")}
-              size={20}
-              style={{ marginRight: 7 }}
-            />
-            <BsTwitter
-              onClick={() => this.shareThis(data, "whatsapp")}
-              size={20}
-            />
-          </div>
+        <div className="product-share" onClick={() => this.shareThis(data)}>
+          <BsShare size={15} />
         </div>
       </div>
     );

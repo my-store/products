@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../../styles/pages/products/getall.scss";
+import { Helmet } from "react-helmet";
 import $ from "jquery";
 
 /* ======= | NUMBER FORMATING | ======= */
@@ -15,6 +16,15 @@ export default class GetAllProducts extends Component {
     const { database, getoneProduct, imgPath } = this.props;
     return (
       <div className="getall-page">
+        <Helmet>
+          <title>PRODUCTS | RBX FAMILY BREBES</title>
+          <meta
+            name="description"
+            content="DAFTAR PRODUK | Segera online kan bisnis anda bersama kami."
+          />
+          <link rel="canonical" href={window.location} />
+        </Helmet>
+
         <div className="products-banner">
           <h1>SELAMAT DATANG DI RUMAH KAMI</h1>
           <p>
