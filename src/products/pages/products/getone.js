@@ -13,6 +13,7 @@ export default class GetoneProduct extends Component {
     $(window).scrollTop(0);
   }
 
+  // Only work on HTTPS protocol
   shareThis = ({ nama }) => {
     const data = {
       text: nama.toUpperCase(),
@@ -37,7 +38,18 @@ export default class GetoneProduct extends Component {
         <Helmet>
           <title>{nama.toUpperCase()}</title>
           <meta name="description" content={info} />
-          <link rel="canonical" href={window.location} />
+
+          {/* SEO | Facebook */}
+          <meta property="og:title" content={nama.toUpperCase()} />
+          <meta property="og:type" content="article" />
+          <meta property="og:url" content={window.location} />
+          <meta property="og:image" content={imgPath + data.photo} />
+
+          {/* SEO | Twitter */}
+          <meta name="twitter:title" content={nama.toUpperCase()} />
+          <meta name="twitter:description" content={info} />
+          <meta name="twitter:image" content={imgPath + data.photo} />
+          <meta name="twitter:card" content="summary_large_image" />
         </Helmet>
 
         <div
