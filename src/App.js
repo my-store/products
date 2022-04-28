@@ -51,12 +51,12 @@ class App extends Component {
     let { page } = this.state;
 
     // Jika terdapat & maka parameter adalah array, jika tidak maka single-object
-    let params = await window.location.search.substring(1);
+    let params = window.location.search.substring(1);
 
     // Ada parameter
     if (params && params.length > 0) {
       if (params.match(/\&/gi)) {
-        params = await params.split("&");
+        params = params.split("&");
         // Convert to object
         for (let x = 0; x < params.length; x++) {
           const col = params[x].split("=")[0];
