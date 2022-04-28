@@ -1,22 +1,8 @@
-import $ from "jquery";
+import Datastore from "./assets/Database.json";
 
 export default class Database {
-  constructor() {
-    this.state = {
-      db: {
-        name: "Database",
-        ext: "json",
-        path: "https://raw.githubusercontent.com/my-store/products/main/public/", // Production
-      },
-    };
-  }
-  getdata = async () => {
-    let data = [];
-    const { db } = this.state;
-    const dbFile = db.path + db.name + "." + db.ext;
-    data = await $.getJSON(dbFile, (x) => x);
-    return data;
-  };
+  getdata = () => Datastore;
+
   load = async () => {
     let data = await this.getdata();
     data = await data.reduce((group, product) => {

@@ -134,6 +134,8 @@ class App extends Component {
   setPage = (page) => this.__mounted__ && this.setState({ page });
 
   render() {
+    const { page } = this.state;
+
     return (
       <div className="page">
         {/* Header */}
