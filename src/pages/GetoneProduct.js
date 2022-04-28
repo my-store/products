@@ -1,6 +1,5 @@
 import { BsWhatsapp, BsTag, BsShare } from "react-icons/bs";
 import "../styles/pages/products/getone.scss";
-import { Helmet } from "react-helmet-async";
 import React, { Component } from "react";
 import Loading from "react-loading";
 import $ from "jquery";
@@ -51,27 +50,6 @@ export default class GetoneProduct extends Component {
 
     return (
       <div className="getone-page">
-        <Helmet>
-          <title>{nama.toUpperCase()}</title>
-          <meta name="description" content={info} />
-
-          {/* SEO | Facebook */}
-          <meta property="og:title" content={nama.toUpperCase()} />
-          <meta property="og:type" content="article" />
-          <meta property="og:url" content={window.location} />
-          <meta
-            property="og:image"
-            content={imgPath + data.photo}
-            key="image"
-          />
-
-          {/* SEO | Twitter */}
-          <meta name="twitter:title" content={nama.toUpperCase()} />
-          <meta name="twitter:description" content={info} />
-          <meta name="twitter:image" content={imgPath + data.photo} />
-          <meta name="twitter:card" content="summary_large_image" />
-        </Helmet>
-
         {/* Loading */}
         {isloading && (
           <div className="loading">

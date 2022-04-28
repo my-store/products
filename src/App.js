@@ -1,10 +1,6 @@
-import { Helmet } from "react-helmet-async";
 import React, { Component, createRef } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import $ from "jquery";
-
-// SEO Image
-import bannerImage from "./assets/img/background/wp-9.jpg";
 
 // Style
 import "./styles/index.scss";
@@ -138,27 +134,8 @@ class App extends Component {
   setPage = (page) => this.__mounted__ && this.setState({ page });
 
   render() {
-    const { page } = this.state;
-    const pageTitle = "PRODUCTS | RBX FAMILY BREBES";
-    const descInfo = "Ayo teman-teman, optimalkan bisnis online kamu disini.";
-    const pageURL = window.location.pathname + window.location.search;
-
     return (
       <div className="page">
-        <Helmet>
-          <title>{pageTitle}</title>
-          <meta name="description" content={descInfo} />
-          <link rel="canonical" href={pageURL} />
-
-          {/* SEO | Facebook */}
-
-          {/* SEO | Twitter */}
-          <meta name="twitter:title" content={pageTitle} />
-          <meta name="twitter:description" content={descInfo} />
-          <meta name="twitter:image" content={bannerImage} />
-          <meta name="twitter:card" content="summary_large_image" />
-        </Helmet>
-
         {/* Header */}
         <div className="page-header">
           <Header
