@@ -1,5 +1,6 @@
 import React, { Component, createRef } from "react";
 import { BsWhatsapp } from "react-icons/bs";
+import { Helmet } from "react-helmet-async";
 import $ from "jquery";
 
 // Style
@@ -138,6 +139,11 @@ class App extends Component {
 
     return (
       <div className="page">
+        <Helmet>
+          <meta name="og:title" content="TEST TITLE" />
+          <meta name="og:description" content="TEST DESCRIPTION" />
+        </Helmet>
+
         {/* Header */}
         <div className="page-header">
           <Header
