@@ -90,27 +90,29 @@ export default class GetallProducts extends Component {
                 </div>
                 <div className="product-list">
                   {list &&
-                    list.map(({ _id, nama, harga, photo, kondisi }, _y_) => {
-                      return (
-                        <div
-                          key={_y_}
-                          className="product-item"
-                          onClick={() => this.getoneProduct(_id)}
-                        >
+                    list.map(
+                      ({ uniqueKey, nama, harga, photo, kondisi }, _y_) => {
+                        return (
                           <div
-                            className="product-photo"
-                            style={{
-                              backgroundImage: `url("${imgPath + photo}")`,
-                            }}
-                          ></div>
-                          <p className="product-name">{nama}</p>
-                          <p className="product-info harga">
-                            Rp. {numberFormat(harga)} -
-                          </p>
-                          <p className="product-info kondisi">{kondisi}</p>
-                        </div>
-                      );
-                    })}
+                            key={_y_}
+                            className="product-item"
+                            onClick={() => this.getoneProduct(uniqueKey)}
+                          >
+                            <div
+                              className="product-photo"
+                              style={{
+                                backgroundImage: `url("${imgPath + photo}")`,
+                              }}
+                            ></div>
+                            <p className="product-name">{nama}</p>
+                            <p className="product-info harga">
+                              Rp. {numberFormat(harga)} -
+                            </p>
+                            <p className="product-info kondisi">{kondisi}</p>
+                          </div>
+                        );
+                      }
+                    )}
                 </div>
 
                 {/* Spacer */}

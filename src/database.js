@@ -15,6 +15,6 @@ export default class Database {
   };
   getone = async (getID) => {
     let data = await this.getdata();
-    return data.find(({ _id }) => _id === getID);
+    return data.find(({ uniqueKey }) => uniqueKey === getID);
   };
 }
