@@ -53,7 +53,7 @@ export default class GetoneProduct extends Component {
         {/* Loading */}
         {isloading && (
           <div className="loading">
-            <Loading type="bubbles" color="rgb(15, 54, 99)" />
+            <Loading type="bubbles" color="#925f00" />
           </div>
         )}
 

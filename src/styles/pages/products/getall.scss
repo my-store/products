@@ -1,6 +1,6 @@
 $window: 800px;
 $white: #eee;
-$primary-color: rgb(0, 109, 128);
+$primary-color: #925f00;
 
 @mixin bg-white {
   background-color: $white;
@@ -129,7 +129,7 @@ $primary-color: rgb(0, 109, 128);
               }
               .harga {
                 font-weight: bold;
-                color: rgb(18, 141, 163);
+                color: #925f00;
                 font-size: 17px;
               }
               .kondisi {
@@ -199,7 +199,7 @@ $primary-color: rgb(0, 109, 128);
               }
               .harga {
                 font-weight: bold;
-                color: rgb(18, 141, 163);
+                color: #925f00;
                 font-size: 15px;
               }
               .kondisi {

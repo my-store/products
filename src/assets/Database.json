@@ -17,7 +17,29 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "juboNiY2MyZZWq6a",
+    "uniqueKey": "juboNiY2MyZZWq6a",
+    "createdAt": "2022-04-12T15:06:47.853Z",
+    "updatedAt": "2022-04-12T15:06:47.853Z"
+  },
+  {
+    "nama": "Kabel USB Warna CMB80",
+    "harga": "12000",
+    "warna": "",
+    "kondisi": "Baru",
+    "tlp": "081393552220",
+    "photo": "kabel-usb-warna-cmb80.JPG",
+    "category": "accessories",
+    "timestamp": {
+      "hari": "Selasa",
+      "tanggal": 12,
+      "bulan": "April",
+      "tahun": "2022",
+      "jam": "22",
+      "menit": "06",
+      "detik": "47",
+      "format": "WIB"
+    },
+    "uniqueKey": "DuSoNiY2QyZZVq3a",
     "createdAt": "2022-04-12T15:06:47.853Z",
     "updatedAt": "2022-04-12T15:06:47.853Z"
   },
@@ -39,7 +61,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "E5m4tIvQAY8v9DoE",
+    "uniqueKey": "E5m4tIvQAY8v9DoE",
     "createdAt": "2022-04-12T15:06:47.833Z",
     "updatedAt": "2022-04-12T15:06:47.833Z"
   },
@@ -61,7 +83,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "jnUsqo29qEQ07Fa2",
+    "uniqueKey": "jnUsqo29qEQ07Fa2",
     "createdAt": "2022-04-12T15:06:47.803Z",
     "updatedAt": "2022-04-12T15:06:47.803Z"
   },
@@ -83,7 +105,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "6FbzMvl1WsIPVjX7",
+    "uniqueKey": "6FbzMvl1WsIPVjX7",
     "createdAt": "2022-04-12T15:06:47.791Z",
     "updatedAt": "2022-04-12T15:06:47.791Z"
   },
@@ -105,7 +127,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "QAJ3bpmWLnugf8yE",
+    "uniqueKey": "QAJ3bpmWLnugf8yE",
     "createdAt": "2022-04-12T15:06:47.777Z",
     "updatedAt": "2022-04-12T15:06:47.777Z"
   },
@@ -127,7 +149,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "sVdy9aLraqXBMFzQ",
+    "uniqueKey": "sVdy9aLraqXBMFzQ",
     "createdAt": "2022-04-12T15:06:47.760Z",
     "updatedAt": "2022-04-12T15:06:47.760Z"
   },
@@ -149,7 +171,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "XAp3gXgJa1Zbz1sq",
+    "uniqueKey": "XAp3gXgJa1Zbz1sq",
     "createdAt": "2022-04-12T15:06:47.738Z",
     "updatedAt": "2022-04-12T15:06:47.738Z"
   },
@@ -171,7 +193,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "FCPg6RmBJEQ4etzf",
+    "uniqueKey": "FCPg6RmBJEQ4etzf",
     "createdAt": "2022-04-12T15:06:47.713Z",
     "updatedAt": "2022-04-12T15:06:47.713Z"
   },
@@ -193,7 +215,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "AUtkTX91jqOPcji2",
+    "uniqueKey": "AUtkTX91jqOPcji2",
     "createdAt": "2022-04-12T15:06:47.690Z",
     "updatedAt": "2022-04-12T15:06:47.690Z"
   },
@@ -215,7 +237,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "Pbxa7lRyUiBrtVOa",
+    "uniqueKey": "Pbxa7lRyUiBrtVOa",
     "createdAt": "2022-04-12T15:06:47.669Z",
     "updatedAt": "2022-04-12T15:06:47.669Z"
   },
@@ -237,7 +259,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "haE5VuV6Qv4XY4PH",
+    "uniqueKey": "haE5VuV6Qv4XY4PH",
     "createdAt": "2022-04-12T15:06:47.645Z",
     "updatedAt": "2022-04-12T15:06:47.645Z"
   },
@@ -259,7 +281,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "fLpVunVNcaFOipSs",
+    "uniqueKey": "fLpVunVNcaFOipSs",
     "createdAt": "2022-04-12T15:06:47.621Z",
     "updatedAt": "2022-04-12T15:06:47.621Z"
   },
@@ -281,7 +303,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "rGL8JQE8QW0STFl1",
+    "uniqueKey": "rGL8JQE8QW0STFl1",
     "createdAt": "2022-04-12T15:06:47.598Z",
     "updatedAt": "2022-04-12T15:06:47.598Z"
   },
@@ -303,7 +325,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "AdaY6A3CLr5jq7bs",
+    "uniqueKey": "AdaY6A3CLr5jq7bs",
     "createdAt": "2022-04-12T15:06:47.586Z",
     "updatedAt": "2022-04-12T15:06:47.586Z"
   },
@@ -325,7 +347,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "0o93I1RsSqzJLwAt",
+    "uniqueKey": "0o93I1RsSqzJLwAt",
     "createdAt": "2022-04-12T15:06:47.568Z",
     "updatedAt": "2022-04-12T15:06:47.568Z"
   },
@@ -347,7 +369,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "WANGwg9tWmDDbcV7",
+    "uniqueKey": "WANGwg9tWmDDbcV7",
     "createdAt": "2022-04-12T15:06:47.548Z",
     "updatedAt": "2022-04-12T15:06:47.548Z"
   },
@@ -369,7 +391,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "ma3lADExHjhk7CXs",
+    "uniqueKey": "ma3lADExHjhk7CXs",
     "createdAt": "2022-04-12T15:06:47.530Z",
     "updatedAt": "2022-04-12T15:06:47.530Z"
   },
@@ -391,7 +413,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "GDFRINEzrxFLgPxw",
+    "uniqueKey": "GDFRINEzrxFLgPxw",
     "createdAt": "2022-04-12T15:06:47.510Z",
     "updatedAt": "2022-04-12T15:06:47.510Z"
   },
@@ -413,7 +435,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "GaCXYr9bYSeTvGZD",
+    "uniqueKey": "GaCXYr9bYSeTvGZD",
     "createdAt": "2022-04-12T15:06:47.484Z",
     "updatedAt": "2022-04-12T15:06:47.484Z"
   },
@@ -435,7 +457,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "BxLY24tGFmPiWxMD",
+    "uniqueKey": "BxLY24tGFmPiWxMD",
     "createdAt": "2022-04-12T15:06:47.463Z",
     "updatedAt": "2022-04-12T15:06:47.463Z"
   },
@@ -457,7 +479,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "Xo4JV8iKLEwooO1w",
+    "uniqueKey": "Xo4JV8iKLEwooO1w",
     "createdAt": "2022-04-12T15:06:47.437Z",
     "updatedAt": "2022-04-12T15:06:47.437Z"
   },
@@ -479,7 +501,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "8ARgBWarjODUcUla",
+    "uniqueKey": "8ARgBWarjODUcUla",
     "createdAt": "2022-04-12T15:06:47.403Z",
     "updatedAt": "2022-04-12T15:06:47.403Z"
   },
@@ -501,7 +523,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "yl3RNhm4obKvBfRh",
+    "uniqueKey": "yl3RNhm4obKvBfRh",
     "createdAt": "2022-04-12T15:06:47.376Z",
     "updatedAt": "2022-04-12T15:06:47.376Z"
   },
@@ -523,7 +545,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "qZ8OR26BjAHYq2ae",
+    "uniqueKey": "qZ8OR26BjAHYq2ae",
     "createdAt": "2022-04-12T15:06:47.350Z",
     "updatedAt": "2022-04-12T15:06:47.350Z"
   },
@@ -545,7 +567,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "BIjrvu0105Ikb5aS",
+    "uniqueKey": "BIjrvu0105Ikb5aS",
     "createdAt": "2022-04-12T15:06:47.315Z",
     "updatedAt": "2022-04-12T15:06:47.315Z"
   },
@@ -567,7 +589,7 @@
       "detik": "47",
       "format": "WIB"
     },
-    "_id": "MiDznFmboU61ZgeA",
+    "uniqueKey": "MiDznFmboU61ZgeA",
     "createdAt": "2022-04-12T15:06:47.280Z",
     "updatedAt": "2022-04-12T15:06:47.280Z"
   }

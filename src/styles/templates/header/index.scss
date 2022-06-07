@@ -1,6 +1,6 @@
 $window: 800px;
 $white: #eee;
-$primary-color: rgb(0, 109, 128);
+$primary-color: #925f00;
 
 @mixin bg-white {
   background-color: $white;
@@ -13,7 +13,7 @@ $primary-color: rgb(0, 109, 128);
 // Global style
 .header {
   width: 100%;
-  color: $white;
+  color: #ffe1aa;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -25,7 +25,6 @@ $primary-color: rgb(0, 109, 128);
   padding: 0px 10px 0px 10px;
   border-bottom: 1px solid $white;
   .header-brand {
-    color: $white;
     font-weight: bold;
   }
   .header-links {
@@ -83,7 +82,7 @@ $primary-color: rgb(0, 109, 128);
         height: 2px;
         border-radius: 1px;
         animation-iteration-count: inherit;
-        @include bg-white();
+        background-color: #ffe1aa;
       }
       .bgr-1 {
         animation-duration: 1s;

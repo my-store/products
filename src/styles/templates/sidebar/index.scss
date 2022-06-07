@@ -1,6 +1,6 @@
 $window: 800px;
 $white: #eee;
-$primary-color: rgb(0, 109, 128);
+$primary-color: #ffe1aa;
 
 @mixin bg-white() {
   background-color: $white;
@@ -108,14 +108,14 @@ $primary-color: rgb(0, 109, 128);
       h2 {
         font-size: 17px;
         line-height: 22px;
-        color: $white;
+        color: #925f00;
         margin-bottom: 3px;
         &:not(h2:nth-child(1)) {
           margin-top: 10px;
         }
       }
       a {
-        color: cyan;
+        color: #cc9020;
         width: 100%;
         display: block;
         font-size: 16px;

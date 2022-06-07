@@ -1,7 +1,7 @@
 $window: 800px;
 $white: #eee;
-$cyan: rgb(2, 247, 255);
-$primary-color: rgb(8, 134, 156);
+$beight: #e9b047;
+$primary-color: #925f00;
 
 @mixin bg-white {
   background-color: $white;
@@ -11,8 +11,8 @@ $primary-color: rgb(8, 134, 156);
   background-color: $primary-color;
 }
 
-@mixin bg-cyan {
-  background-color: $cyan;
+@mixin bg-beight {
+  background-color: $beight;
 }
 
 /* width */
@@ -21,11 +21,11 @@ $primary-color: rgb(8, 134, 156);
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(30, 162, 185);
+  background: #ffe1aa;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(0, 109, 128);
+  background: #e9b451;
   border-radius: 10px;
   background-clip: padding-box;
   border: 3px solid transparent;
@@ -58,6 +58,7 @@ $primary-color: rgb(8, 134, 156);
 
 .page {
   width: 100%;
+  background-color: #fff6e6;
   .page-header {
     width: 100%;
   }
@@ -94,7 +95,7 @@ $primary-color: rgb(8, 134, 156);
     border: 1px solid $white;
     @include _shadow_(0.3);
     &:active {
-      @include bg-cyan();
+      @include bg-beight();
     }
   }
 
