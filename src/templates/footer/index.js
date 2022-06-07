@@ -115,7 +115,7 @@ class Footer extends Component {
               size={12}
               style={{ marginRight: 5, marginTop: 2 }}
             />{" "}
-            (+62) 813-935-2220
+            (+62) 813-9355-2220
           </p>
         </div>
       </div>
